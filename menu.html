@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>-->
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<div class="menu-toggler-body">
+    <label for="menu-toggler" class="menu__burger js-menu-toggler" >
+        <input id="menu-toggler" type="checkbox" name="menu-toggler">
+        <div class="menu__close" onclick="$('html').toggleClass('menu-opened');">ЗАКРЫТЬ</div>
+        <div class="menu__open" onclick="$('html').toggleClass('menu-opened');">МЕНЮ</div>
+        <span class="burger" onclick="$('html').toggleClass('menu-opened');">
+				<span class="burger__item burger__1"></span>
+				<span class="burger__item burger__2"></span>
+				<span class="burger__item burger__3"></span>
+			</span>
+    </label>
+</div>
+<div class="menu">
+    <div class="menu__body">
+        <div class="menu__header">
+            <div class="menu__logo"></div>
+            <div class="menu__phone">+7 (3412) 900-553</div>
+            <div class="menu__btn">ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ</div>
+        </div>
+
+    <div class="menu__body__content">
+        <div class="big_logo"></div>
+        <ul class="menu__links" onclick="$('html').toggleClass('menu-opened');">
+            <li><a href="#block1">Пройти тест - опрос</a><span>И ПОЛУЧИТЬ ПОДРОБНУЮ СМЕТУ ПО ВАШЕЙ КРЫШЕ</span></li>
+            <li><a href="#block2">Преимущества металлочерепицы</a></li>
+            <li><a href="#block3">Производимые профиля</a></li>
+            <li><a href="#block1">Каталог покрытий и цветов</a></li>
+            <li><a href="#block2">Фотографии объектов</a></li>
+            <li><a href="#block3">Наши услуги</a></li>
+            <li><a href="#block1">О компании</a></li>
+            <li><a href="#block2">Контакты</a></li>
+        </ul>
+    </div>
+        <div class="menu__social">
+            <div class="vk"></div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div id="block1"></div>
+    <div id="block2"></div>
+    <div id="block3"></div>
+</div>
+
+
+</body>
+</html>
